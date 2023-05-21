@@ -1,0 +1,190 @@
+body {
+  font-family: Arial;
+  margin: 12px;
+}
+
+.wd-bookmarks-navbar {
+  width: 100%;
+  height: 30px;
+  font-size: 20px;
+  padding: 12px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
+
+.wd-left-arrow {
+  margin-left: 1%;
+  width: 10%;
+  float: left;
+}
+
+.wd-bm-title {
+  width: 78%;
+  float: left;
+}
+
+.wd-bm-options {
+  width: 10%;
+  float: right;
+}
+
+.wd-bm-tuits {
+  border:  1px solid lightgray;
+  width: 100%;
+}
+
+.wd-bm-tuit {
+  width: 100%;
+  display: inline-block;
+  height: auto;
+  padding: 12px;
+  margin-bottom: 12px;
+}
+
+.wd-bm-tuit-profile-image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0px;
+  float: left;
+}
+
+.wd-bm-tuit-profile-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.wd-bm-tuit-content {
+  width: 90%;
+  float: right;
+}
+
+.wd-bm-tuit-heading {
+  width: inherit;
+  display: inline-block;
+  height: auto;
+  margin-right: 0px;
+}
+
+.wd-bm-tuit-heading1 {
+  padding: 5px;
+  float: left;
+  display: inline;
+}
+
+.wd-tuit-handle-name {
+  font-weight: bold;
+  font-size: 18px;
+  float: left;
+}
+
+.wd-tuit-logo {
+  margin-left: 2px;
+  margin-right: 2px;
+  float: left;
+  display: inline;
+}
+
+.wd-tuit-logo img {
+  width: 20px;
+  height: 20px;
+}
+
+.wd-tuit-tag-date {
+  color: grey;
+  float: left;
+}
+
+.wd-bm-tuit-more {
+  width: 2%;
+  font-weight: bold;
+  font-size: 18px;
+  float: right;
+  margin-right: 0px;
+  display: inline;
+}
+
+.wd-bm-tuit-heading2 {
+  display: block;
+}
+
+.wd-bm-tuit-main-content {
+  width: inherit;
+  border:  1px solid lightgray;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.wd-bm-tuit-image img {
+  width: 100%;
+  height: 40%;
+  border-radius: 15px 15px 0 0;
+}
+
+.wd-bm-tuit-source {
+  padding: 5px;
+  color: grey;
+}
+.wd-bm-tuit-heading3 {
+  padding: 3px;
+  padding-left: 5px;
+}
+
+.wd-bm-tuit-text {
+  padding-left: 5px;
+  padding-right: 5px;
+  color: grey;
+}
+
+.wd-bm-tuit-footer {
+  width: inherit;
+  color: grey;
+}
+
+.wd-bm-tuit-footer div {
+  float: left;
+}
+
+.wd-bm-tuit-footer span {
+  margin-left: 5px;
+}
+
+.wd-bm-comment {
+  width: 20%;
+}
+
+.wd-bm-sync {  width: 20%;}
+
+.wd-bm-like {  width: 20%;}
+
+.wd-bm-bar{  width: 20%;}
+
+.wd-bm-upload{  width: 20%;}
+
+.wd-bm-comment-count{
+  margin-left: 15px;
+  margin-right: 10px;
+}
+.wd-bm-sync-count{
+  margin-left: 15px;
+  margin-right: 10px;
+}
+.wd-bm-like-count{
+  margin-left: 15px;
+  margin-right: 10px;
+}
+.wd-bm-bar-count{
+  margin-left: 15px;
+  margin-right: 10px;
+}
+
+.wd-link-text {
+  color: #0dcaf0;
+}
+
+.wd-active-footer {
+  color: deeppink;
+}
