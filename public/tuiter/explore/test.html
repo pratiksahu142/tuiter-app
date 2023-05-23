@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Side Navigation List</title>
+  <!-- Include Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Include Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    .sidebar {
+      background-color: #f8f9fa;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      padding: 10px;
+    }
+    .sidebar a {
+      color: #000;
+      text-decoration: none;
+    }
+    .sidebar a:hover {
+      color: #007bff;
+    }
+    .sidebar i {
+      margin-right: 10px;
+    }
+  </style>
+</head>
+<body>
+<div class="d-flex" id="wrapper">
+  <!-- Sidebar -->
+  <div class="bg-white border-right sidebar" id="sidebar-wrapper">
+    <div class="sidebar-heading">Navigation</div>
+    <ul class="nav flex-column">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-home"></i>Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-envelope"></i>Messages</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-users"></i>Users</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#"><i class="fas fa-cog"></i>Settings</a>
+      </li>
+    </ul>
+  </div>
+  <!-- /#sidebar-wrapper -->
+  <!-- Page Content -->
+  <div id="page-content-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="list-item" style="display: flex">
+            <img src="image1.jpg" alt="Item 1" class="item-image">
+            <h4>Item 1</h4>
+            <p>Additional text for Item 1</p>
+            <button class="btn btn-primary">Button</button>
+          </div>
+          <div class="list-item">
+            <img src="image1.jpg" alt="Item 1" class="item-image">
+            <h4>Item 1</h4>
+            <p>Additional text for Item 1</p>
+            <button class="btn btn-primary">Button</button>
+          </div>
+          <div class="list-item">
+            <img src="image1.jpg" alt="Item 1" class="item-image">
+            <h4>Item 1</h4>
+            <p>Additional text for Item 1</p>
+            <button class="btn btn-primary">Button</button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="list-item">
+            <img src="image2.jpg" alt="Item 2" class="item-image">
+            <h4>Item 2</h4>
+            <p>Additional text for Item 2</p>
+            <button class="btn btn-primary">Button</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /#page-content-wrapper -->
+</div>
+<!-- /#wrapper -->
+
+<!-- Include Bootstrap JS (optional) -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

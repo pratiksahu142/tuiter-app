@@ -65,6 +65,7 @@ body {
   margin-right: 2px;
   font-size: 15px;
 }
+
 .wd-nav-link button.active {
   color: black;
   border-bottom: 3px solid deepskyblue;
@@ -166,6 +167,64 @@ body {
 }
 
 .wd-tweet-count {
-  color: darkgray;
+  color: #888;
   margin: 0;
 }
+
+.wd-tuiter-handle-profile-img {
+  width: 45px;
+  height: 45px;
+}
+
+.wd-bluetick {
+  height: 15px;
+  width: 15px;
+}
+
+.wd-round-button {
+  border-radius: 15px 15px 15px 15px;
+}
+
+.wd-magnifying-icon {
+  background-color: white;
+  border-right: none;
+}
+
+.wd-search-input {
+  border-left: none;
+}
+
+.wd-rounded-border {
+  border-radius: 35px;
+}
+
+.card-img-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.card-title,
+.card-text {
+  margin: 0;
+}
+
+.wd-nav-card {
+  position: relative;
+  border: none;
+}
+
+.wd-tuit-title-inline {
+  display: inline;
+}
+
+.wd-tuit-border {
+  border-bottom:  1px solid lightgray;
+}
+
