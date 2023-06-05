@@ -37,7 +37,7 @@ picks up the Curiosity rover on its 6' bed`,
           <div className="col-10">
             <div className="row">
               <div>
-                <div className="fw-bolder d-inline">{tuit.userName}</div>
+                <div className="fw-bolder d-inline me-1">{tuit.userName}</div>
                 <BsPatchCheckFill size={20}
                                   color="#0d6efd"/> {tuit.handle} . {tuit.time}
                 <button className="bi bi-x-lg float-end button-none"
