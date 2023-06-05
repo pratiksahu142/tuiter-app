@@ -10,7 +10,7 @@ function ExploreScreen() {
         <div className="row">
           <div className="col-11 position-relative">
             <input placeholder="Search Tuiter"
-            className="form-control rounded-pill ps-5"/>
+                   className="form-control rounded-pill ps-5"/>
             <AiOutlineSearch className="fs-3 position-absolute
  wd-nudge-up"/>
           </div>
@@ -37,5 +37,5 @@ function ExploreScreen() {
         </div>
         <TuitSummaryList/> </>
   );
-};
+}
 export default ExploreScreen;

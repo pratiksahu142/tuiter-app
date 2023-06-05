@@ -36,13 +36,13 @@ picks up the Curiosity rover on its 6' bed`,
                  src={`/images/${tuit.image}`}/></div>
           <div className="col-10">
             <div className="row">
-
               <div>
                 <div className="fw-bolder d-inline">{tuit.userName}</div>
                 <BsPatchCheckFill size={20}
                                   color="#0d6efd"/> {tuit.handle} . {tuit.time}
-                <text className="bi bi-x-lg float-end"
-                   onClick={() => deleteTuitHandler(tuit._id)}>x</text>
+                <button className="bi bi-x-lg float-end button-none"
+                        onClick={() => deleteTuitHandler(tuit._id)}>x
+                </button>
               </div>
             </div>
             <div className="row">
@@ -58,7 +58,6 @@ picks up the Curiosity rover on its 6' bed`,
             </div>
           </div>
         </div>
-
       </li>
   );
 };
