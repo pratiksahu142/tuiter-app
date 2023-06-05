@@ -1,0 +1,44 @@
+[
+  {
+    "_id": 234,
+    "topic": "Space",
+    "userName": "SpaceX",
+    "title": "This morning at 12:30EST Earth Time a convoy of Tesla CyberTrucks drove across the martian landscape",
+    "time": "2h",
+    "image": "spacexlogo.jpeg",
+    "liked": true,
+    "replies": 123,
+    "retuits": 432,
+    "likes": 12345,
+    "handle": "@spacex",
+    "tuit": "This morning at 12:30EST Earth Time a convoy of Tesla CyberTrucks drove across the martian landscape after picking up the Curiosity, Sojourner, Spirit and Perserance on their 6' beds."
+  },
+  {
+    "_id": 123,
+    "topic": "Tesla",
+    "userName": "Tesla",
+    "title": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play, or sleep",
+    "time": "4d",
+    "image": "teslalogo.jpeg",
+    "liked": false,
+    "replies": 432,
+    "retuits": 654,
+    "likes": 32345,
+    "handle": "@tesla",
+    "tuit": "Tesla FSD finally makes driving obsolete. After years of delay, Tesla Full Self Driving can drive you to work while you work, play or sleep"
+  },
+  {
+    "_id": 345,
+    "topic": "Energy",
+    "userName": "SpaceX",
+    "title": "A Space-faring Civilization",
+    "time": "3h",
+    "image": "spacexlogo.jpeg",
+    "liked": false,
+    "replies": 321,
+    "retuits": 543,
+    "likes": 22345,
+    "handle": "@spacex",
+    "tuit": "You want to wake up in the morning and think the future is going to be great - and that’s what being a spacefaring civilization is all about. It’s about believing in the future and thinking that the future will be betterthan the past. And I can’t think of anything more exciting than going out there and being among the stars"
+  }
+]
