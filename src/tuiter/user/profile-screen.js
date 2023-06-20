@@ -1,8 +1,11 @@
 import React, {useEffect, useState} from "react";
 import {useDispatch, useSelector} from "react-redux";
 import {useNavigate} from "react-router";
-import {profileThunk, logoutThunk, updateUserThunk} from "../services/auth-thunks";
-import {Navigate} from "react-router-dom";
+import {
+  logoutThunk,
+  profileThunk,
+  updateUserThunk
+} from "../services/auth-thunks";
 
 function ProfileScreen() {
   const {currentUser} = useSelector((state) => state.user);
@@ -10,15 +13,14 @@ function ProfileScreen() {
   const dispatch = useDispatch();
   const navigate = useNavigate();
 
-
   const save = async () => {
     console.log(profile);
     const updatedProfile = await dispatch(updateUserThunk(profile));
     console.log(updatedProfile);
   };
-  useEffect( () => {
+  useEffect(() => {
     async function fetchProfile() {
-      if(currentUser){
+      if (currentUser) {
         const {payload} = await dispatch(profileThunk());
         console.log(payload);
         setProfile(payload);
@@ -26,6 +28,7 @@ function ProfileScreen() {
         navigate("/tuiter/login");
       }
     }
+
     fetchProfile();
   }, []);
   return (
@@ -34,20 +37,22 @@ function ProfileScreen() {
         {profile && (<div>
               <div className="mt-2">
                 <label>First Name</label>
-                <input className="form-control" type="text" value={profile.firstname}
+                <input className="form-control" type="text"
+                       value={profile.firstName}
                        onChange={(event) => {
                          const newProfile = {
-                           ...profile, firstname: event.target.value,
+                           ...profile, firstName: event.target.value,
                          };
                          setProfile(newProfile);
                        }}/>
               </div>
               <div className="mt-2">
                 <label>Last Name</label>
-                <input className="form-control" type="text" value={profile.lastname}
+                <input className="form-control" type="text"
+                       value={profile.lastName}
                        onChange={(event) => {
                          const newProfile = {
-                           ...profile, lastname: event.target.value,
+                           ...profile, lastName: event.target.value,
                          };
                          setProfile(newProfile);
                        }}/>
@@ -61,7 +66,8 @@ function ProfileScreen() {
               navigate("/tuiter/login");
             }}> Logout
         </button>
-        <button className="btn btn-primary ms-3 mt-2" onClick={save}>Save</button>
+        <button className="btn btn-primary ms-3 mt-2" onClick={save}>Save
+        </button>
       </div>);
 }
 
