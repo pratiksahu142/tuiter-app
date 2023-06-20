@@ -11,8 +11,6 @@ function LoginScreen() {
   const handleLogin = async () => {
     try {
       const user = await dispatch(loginThunk({username, password}));
-      console.log('^^^')
-      console.log(user)
       if (user.payload !== undefined) {
         navigate("/tuiter/profile");
       } else {

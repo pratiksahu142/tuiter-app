@@ -13,9 +13,8 @@ function RegisterScreen() {
   const handleRegister = async () => {
     try {
       const newUser = await dispatch(registerUserThunk({firstName, lastName, username, password}));
-      console.log(newUser);
       alert('Registration Successful!')
-      navigate("/tuiter/profile");
+      navigate("/tuiter/login");
     } catch (e) {
       alert(e);
     }

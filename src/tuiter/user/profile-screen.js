@@ -14,15 +14,12 @@ function ProfileScreen() {
   const navigate = useNavigate();
 
   const save = async () => {
-    console.log(profile);
     const updatedProfile = await dispatch(updateUserThunk(profile));
-    console.log(updatedProfile);
   };
   useEffect(() => {
     async function fetchProfile() {
       if (currentUser) {
         const {payload} = await dispatch(profileThunk(currentUser));
-        console.log(payload);
         setProfile(payload);
       } else {
         navigate("/tuiter/login");
