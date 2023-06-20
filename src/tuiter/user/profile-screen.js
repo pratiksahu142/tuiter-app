@@ -21,7 +21,7 @@ function ProfileScreen() {
   useEffect(() => {
     async function fetchProfile() {
       if (currentUser) {
-        const {payload} = await dispatch(profileThunk());
+        const {payload} = await dispatch(profileThunk(currentUser));
         console.log(payload);
         setProfile(payload);
       } else {
