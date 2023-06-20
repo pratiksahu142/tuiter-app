@@ -4,15 +4,15 @@ import {useDispatch} from "react-redux";
 import {loginThunk, registerUserThunk} from "../services/auth-thunks";
 
 function RegisterScreen() {
-  const [firstname, setFirstname] = useState("");
-  const [lastname, setLastname] = useState("");
+  const [firstName, setFirstName] = useState("");
+  const [lastName, setLastName] = useState("");
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const navigate = useNavigate();
   const dispatch = useDispatch();
   const handleRegister = async () => {
     try {
-      const newUser = await dispatch(registerUserThunk({firstname, lastname, username, password}));
+      const newUser = await dispatch(registerUserThunk({firstName, lastName, username, password}));
       console.log(newUser);
       alert('Registration Successful!')
       navigate("/tuiter/profile");
@@ -25,13 +25,13 @@ function RegisterScreen() {
         <h1>Register Screen</h1>
         <div className="mt-2">
           <label>First Name</label>
-          <input className="form-control" type="text" value={firstname}
-                 onChange={(event) => setFirstname(event.target.value)}/>
+          <input className="form-control" type="text" value={firstName}
+                 onChange={(event) => setFirstName(event.target.value)}/>
         </div>
         <div className="mt-2">
           <label>Last Name</label>
-          <input className="form-control" type="text" value={lastname}
-                 onChange={(event) => setLastname(event.target.value)}/>
+          <input className="form-control" type="text" value={lastName}
+                 onChange={(event) => setLastName(event.target.value)}/>
         </div>
         <div className="mt-2">
           <label>Username</label>
