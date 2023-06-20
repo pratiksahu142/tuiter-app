@@ -21,14 +21,11 @@ export const profile = async (user) => {
 };
 
 export const updateUser = async (user) => {
-  console.log('####')
-  console.log(user)
   const response = await api.put(`${USERS_URL}/${user._id}`, user);
   return response.data;
 };
 
 export const registerUser = async (user) => {
   const response = await api.post(`${USERS_URL}/register`, user);
-  console.log("Response from register", response);
   return response.data;
 }
